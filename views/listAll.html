@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <a action="/" method="GET" href="/">Home</a>
+    <a action="/addTask" method="GET" href="/addTask">Add Task</a>
+    <h1>Task List</h1>
+    </br>
+    <h3>The tasks are:
+        <table>
+            <tr>
+                <td>TaskName</td>
+                <td>TaskDate</td>
+                <td>TaskDesc</td>
+            </tr>
+            <% for ( var i =0; i < taskDb.length;i++){ %>                     <!-- iterates through all the object in the array  -->
+            <tr>
+                <td>
+                    <%= taskDb[i].taskName %>                                <!-- each iteration =a new table row  -->
+                </td>
+                <td>
+                    <%= taskDb[i].taskDate %>
+                </td>
+                <td>
+                    <%= taskDb[i].taskDesc %>
+                </td>
+            </tr>
+            <% }%>
+    </h3>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "morganpackage",
+  "version": "1.0.0",
+  "main": "taskHandler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stewo",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "git": "^0.1.5",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
